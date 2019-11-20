@@ -28,6 +28,7 @@ CMSIS \
 board \
 drivers \
 source \
+source/accelerometer \
 startup \
 utilities \
 

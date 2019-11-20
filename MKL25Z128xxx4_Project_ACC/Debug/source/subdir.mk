@@ -4,25 +4,19 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../source/LIBRARYI2C.cpp \
-../source/MKL25Z128xxx4_Project_ACC.cpp \
-../source/MMA8451Q.cpp 
+../source/MKL25Z128xxx4_Project_ACC.cpp 
 
 C_SRCS += \
 ../source/mtb.c \
 ../source/semihost_hardfault.c 
 
 OBJS += \
-./source/LIBRARYI2C.o \
 ./source/MKL25Z128xxx4_Project_ACC.o \
-./source/MMA8451Q.o \
 ./source/mtb.o \
 ./source/semihost_hardfault.o 
 
 CPP_DEPS += \
-./source/LIBRARYI2C.d \
-./source/MKL25Z128xxx4_Project_ACC.d \
-./source/MMA8451Q.d 
+./source/MKL25Z128xxx4_Project_ACC.d 
 
 C_DEPS += \
 ./source/mtb.d \

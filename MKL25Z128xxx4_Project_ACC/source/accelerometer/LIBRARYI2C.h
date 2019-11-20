@@ -5,8 +5,8 @@
  *      Author: marek
  */
 
-#ifndef LIBRARYI2C_H_
-#define LIBRARYI2C_H_
+#ifndef ACCELEROMETER_LIBRARYI2C_H_
+#define ACCELEROMETER_LIBRARYI2C_H_
 
 #include <fsl_i2c.h>
 
@@ -23,4 +23,4 @@ public:
 	void i2c_write(uint8_t s_addr, uint8_t reg_addr, uint8_t* data, uint8_t len);
 };
 
-#endif /* LIBRARYI2C_H_ */
+#endif /* ACCELEROMETER_LIBRARYI2C_H_ */

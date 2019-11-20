@@ -16,8 +16,8 @@
 * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
+#include <accelerometer/MMA8451Q.h>
 #include <math.h>
-#include "MMA8451Q.h"
 
 #define REG_WHO_AM_I      0x0D	//Device ID (0x1A)
 #define REG_CTRL_REG_1    0x2A	//ODR = 800 Hz, standby mode.

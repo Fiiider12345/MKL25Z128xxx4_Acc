@@ -19,7 +19,7 @@
 #ifndef MMA8451Q_H
 #define MMA8451Q_H
 
-#include "LIBRARYI2C.h"
+#include <accelerometer/LIBRARYI2C.h>
 
 class MMA8451Q
 {

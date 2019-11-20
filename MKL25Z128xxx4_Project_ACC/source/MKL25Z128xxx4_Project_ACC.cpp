@@ -32,6 +32,7 @@
  * @file    MKL25Z128xxx4_Project_ACC.cpp
  * @brief   Application entry point.
  */
+#include <accelerometer/MMA8451Q.h>
 #include <stdio.h>
 #include "board.h"
 #include "peripherals.h"
@@ -40,7 +41,6 @@
 #include "MKL25Z4.h"
 #include "fsl_debug_console.h"
 /* TODO: insert other include files here. */
-#include "MMA8451Q.h"
 #include "fsl_pit.h"
 #include "fsl_smc.h"
 
@@ -139,10 +139,11 @@ int main(void) {
 
 	    	//Enable the wakeup interrupt here.
 	    		if (pitInt_flag) {
-	    		LED_BLUE_TOGGLE();
+	    		//LED_BLUE_TOGGLE();
 	    		akcelerometer.getAccAllAxis(current);
 	    		akcelerometer.high_pass_filter(high_pass_data, current, previous, PERIODA, 1);
 	    		akcelerometer.low_pass_filter(down_pass_data, current, PERIODA, 0.5);
+
 	    		PRINTF("\n\rHigh-pass filtering data \n\rX = ");
 	    		print((int)(high_pass_data[0]*1000));
 	    		PRINTF("Y = ");
@@ -157,7 +158,9 @@ int main(void) {
 	    		PRINTF("Z = ");
 	    		print((int)(down_pass_data[2]*1000));
 	    		PRINTF("\n\r");
+
 	    		print_naklon(akcelerometer.getNaklonX(down_pass_data), akcelerometer.getNaklonY(down_pass_data), down_pass_data);
+
 	    		pitInt_flag= false;
 	    	}
 

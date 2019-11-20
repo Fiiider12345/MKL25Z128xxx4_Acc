@@ -5,7 +5,7 @@
  *      Author: marek
  */
 
-#include "LIBRARYI2C.h"
+#include <accelerometer/LIBRARYI2C.h>
 
 //i2c communication init
 LIBRARY_I2C::LIBRARY_I2C(I2C_Type* I2C_base, uint32_t frequency_i2c) {
