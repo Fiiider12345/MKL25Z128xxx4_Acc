@@ -9,7 +9,7 @@
 
 //i2c communication init
 LIBRARY_I2C::LIBRARY_I2C(I2C_Type* I2C_base, uint32_t frequency_i2c) {
-	// TODO Auto-generated constructor stub
+	// TODO Auto-generated constructor stub ..
 	this->I2C_base = I2C_base;
 	I2C_MasterGetDefaultConfig(&master_config);
 	I2C_MasterInit(I2C_base, &master_config, frequency_i2c);
