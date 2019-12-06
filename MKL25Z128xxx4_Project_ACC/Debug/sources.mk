@@ -29,6 +29,7 @@ board \
 drivers \
 source \
 source/accelerometer \
+source/communication \
 startup \
 utilities \
 

@@ -32,8 +32,6 @@
  * @file    MKL25Z128xxx4_Project_ACC.cpp
  * @brief   Application entry point.
  */
-#include <accelerometer/MMA8451Q.h>
-#include <stdio.h>
 #include "board.h"
 #include "peripherals.h"
 #include "pin_mux.h"
@@ -41,6 +39,8 @@
 #include "MKL25Z4.h"
 #include "fsl_debug_console.h"
 /* TODO: insert other include files here. */
+#include <accelerometer/MMA8451Q.h>
+#include <stdio.h>
 #include "fsl_pit.h"
 #include "fsl_smc.h"
 
