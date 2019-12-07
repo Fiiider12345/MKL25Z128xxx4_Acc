@@ -7,9 +7,7 @@ source/MKL25Z128xxx4_Project_ACC.o source/MKL25Z128xxx4_Project_ACC.d: \
  ../CMSIS/MKL25Z4_features.h ../drivers/fsl_clock.h \
  ../drivers/fsl_common.h ../drivers/fsl_gpio.h ../board/peripherals.h \
  ../board/pin_mux.h ../board/clock_config.h ../CMSIS/MKL25Z4.h \
- ../utilities/fsl_debug_console.h ../source/accelerometer/MMA8451Q.h \
- ../source/accelerometer/LIBRARYI2C.h ../drivers/fsl_i2c.h \
- ../drivers/fsl_pit.h ../drivers/fsl_smc.h
+ ../utilities/fsl_debug_console.h
 
 ../board/board.h:
 
@@ -48,13 +46,3 @@ source/MKL25Z128xxx4_Project_ACC.o source/MKL25Z128xxx4_Project_ACC.d: \
 ../CMSIS/MKL25Z4.h:
 
 ../utilities/fsl_debug_console.h:
-
-../source/accelerometer/MMA8451Q.h:
-
-../source/accelerometer/LIBRARYI2C.h:
-
-../drivers/fsl_i2c.h:
-
-../drivers/fsl_pit.h:
-
-../drivers/fsl_smc.h:
