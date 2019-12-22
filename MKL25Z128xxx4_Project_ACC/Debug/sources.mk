@@ -30,6 +30,7 @@ drivers \
 source \
 source/accelerometer \
 source/communication \
+source/timer \
 startup \
 utilities \
 
