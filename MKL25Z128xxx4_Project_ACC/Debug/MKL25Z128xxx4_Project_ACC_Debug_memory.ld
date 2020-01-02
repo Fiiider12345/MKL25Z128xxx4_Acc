@@ -1,11 +1,11 @@
 /*
  * GENERATED FILE - DO NOT EDIT
  * (c) Code Red Technologies Ltd, 2008-2013
- * (c) NXP Semiconductors 2013-2019
+ * (c) NXP Semiconductors 2013-2020
  * Generated linker script file for MKL25Z128xxx4
  * Created from memory.ldt by FMCreateLinkMemory
  * Using Freemarker v2.3.23
- * MCUXpresso IDE v10.2.1 [Build 795] [2018-07-25]  on Dec 22, 2019 11:36:24 AM
+ * MCUXpresso IDE v10.2.1 [Build 795] [2018-07-25]  on Jan 2, 2020 4:32:54 PM
  */
 
 MEMORY

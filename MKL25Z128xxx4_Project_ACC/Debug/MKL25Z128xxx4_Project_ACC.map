@@ -504,8 +504,8 @@ Discarded input sections
                 0x00000000        0x0 ./source/accelerometer/MMA8451Q.o
  .ARM.exidx.text._ZSt3powIfiEN9__gnu_cxx11__promote_2IT_T0_NS0_9__promoteIS2_XsrSt12__is_integerIS2_E7__valueEE6__typeENS4_IS3_XsrS5_IS3_E7__valueEE6__typeEE6__typeES2_S3_
                 0x00000000        0x8 ./source/accelerometer/MMA8451Q.o
- .debug_info    0x00000000     0x184f ./source/accelerometer/MMA8451Q.o
- .debug_abbrev  0x00000000      0x427 ./source/accelerometer/MMA8451Q.o
+ .debug_info    0x00000000     0x184e ./source/accelerometer/MMA8451Q.o
+ .debug_abbrev  0x00000000      0x43f ./source/accelerometer/MMA8451Q.o
  .debug_aranges
                 0x00000000       0x28 ./source/accelerometer/MMA8451Q.o
  .debug_ranges  0x00000000       0x30 ./source/accelerometer/MMA8451Q.o
@@ -556,7 +556,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x29 ./source/accelerometer/MMA8451Q.o
  .debug_macro   0x00000000       0x10 ./source/accelerometer/MMA8451Q.o
  .debug_macro   0x00000000      0x3c7 ./source/accelerometer/MMA8451Q.o
- .debug_line    0x00000000      0x63a ./source/accelerometer/MMA8451Q.o
+ .debug_line    0x00000000      0x644 ./source/accelerometer/MMA8451Q.o
  .debug_str     0x00000000    0x35bca ./source/accelerometer/MMA8451Q.o
  .comment       0x00000000       0x7f ./source/accelerometer/MMA8451Q.o
  .debug_frame   0x00000000      0x250 ./source/accelerometer/MMA8451Q.o
