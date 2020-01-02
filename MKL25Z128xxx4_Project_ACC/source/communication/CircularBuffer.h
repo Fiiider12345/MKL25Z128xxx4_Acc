@@ -9,16 +9,25 @@
  * Zdroj
  * https://github.com/hudikm/TPRIS_CIRCULAR_BUFFER
  */
+
 #ifndef COMMUNICATION_CIRCULARBUFFER_H_
 #define COMMUNICATION_CIRCULARBUFFER_H_
 
 #include <stddef.h>
 #include <stdint.h>
+#include <string.h>
+#include <assert.h>
 
+/**
+ * Enum of buffer_t condition
+ */
 enum {
 	BUFF_EMPTY, BUFF_FREE, BUFF_FULL
 };
 
+/**
+ * buffer_t struct
+ */
 typedef struct {
 	uint8_t *buf;
 	uint8_t *head, *tail;

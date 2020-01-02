@@ -602,6 +602,7 @@ Discarded input sections
  .group         0x00000000        0xc ./source/MKL25Z128xxx4_Project_ACC.o
  .group         0x00000000        0xc ./source/MKL25Z128xxx4_Project_ACC.o
  .group         0x00000000        0xc ./source/MKL25Z128xxx4_Project_ACC.o
+ .group         0x00000000        0xc ./source/MKL25Z128xxx4_Project_ACC.o
  .debug_macro   0x00000000      0xb5c ./source/MKL25Z128xxx4_Project_ACC.o
  .debug_macro   0x00000000       0x22 ./source/MKL25Z128xxx4_Project_ACC.o
  .debug_macro   0x00000000       0x52 ./source/MKL25Z128xxx4_Project_ACC.o
@@ -6093,7 +6094,7 @@ OUTPUT(MKL25Z128xxx4_Project_ACC.axf elf32-littlearm)
  .debug_ranges  0x00000a30       0x38 ./board/pin_mux.o
  .debug_ranges  0x00000a68       0x18 ./CMSIS/system_MKL25Z4.o
 
-.debug_macro    0x00000000     0xc85f
+.debug_macro    0x00000000     0xc878
  .debug_macro   0x00000000      0x221 ./utilities/fsl_debug_console.o
  .debug_macro   0x00000221      0xa72 ./utilities/fsl_debug_console.o
  .debug_macro   0x00000c93       0x58 ./utilities/fsl_debug_console.o
@@ -6163,32 +6164,33 @@ OUTPUT(MKL25Z128xxx4_Project_ACC.axf elf32-littlearm)
  .debug_macro   0x0000abae       0x51 ./source/communication/CircularBuffer.o
  .debug_macro   0x0000abff       0x58 ./source/communication/CircularBuffer.o
  .debug_macro   0x0000ac57       0x10 ./source/communication/CircularBuffer.o
- .debug_macro   0x0000ac67      0x217 ./source/MKL25Z128xxx4_Project_ACC.o
- .debug_macro   0x0000ae7e       0x16 ./source/MKL25Z128xxx4_Project_ACC.o
- .debug_macro   0x0000ae94       0x10 ./source/MKL25Z128xxx4_Project_ACC.o
- .debug_macro   0x0000aea4      0x112 ./source/MKL25Z128xxx4_Project_ACC.o
- .debug_macro   0x0000afb6       0x8e ./source/MKL25Z128xxx4_Project_ACC.o
- .debug_macro   0x0000b044       0x3a ./source/MKL25Z128xxx4_Project_ACC.o
- .debug_macro   0x0000b07e       0x2f ./source/mtb.o
- .debug_macro   0x0000b0ad       0x82 ./source/mtb.o
- .debug_macro   0x0000b12f       0x10 ./source/mtb.o
- .debug_macro   0x0000b13f       0x11 ./source/semihost_hardfault.o
- .debug_macro   0x0000b150      0x26a ./drivers/fsl_clock.o
- .debug_macro   0x0000b3ba      0x1c3 ./drivers/fsl_common.o
- .debug_macro   0x0000b57d      0x1c0 ./drivers/fsl_dma.o
- .debug_macro   0x0000b73d      0x1c0 ./drivers/fsl_gpio.o
- .debug_macro   0x0000b8fd      0x1bf ./drivers/fsl_i2c.o
- .debug_macro   0x0000babc      0x1c0 ./drivers/fsl_lpsci.o
- .debug_macro   0x0000bc7c      0x1c0 ./drivers/fsl_pit.o
- .debug_macro   0x0000be3c      0x1bf ./drivers/fsl_spi.o
- .debug_macro   0x0000bffb       0x10 ./drivers/fsl_spi.o
- .debug_macro   0x0000c00b      0x1c6 ./drivers/fsl_uart.o
- .debug_macro   0x0000c1d1      0x1e6 ./board/board.o
- .debug_macro   0x0000c3b7      0x1f7 ./board/clock_config.o
- .debug_macro   0x0000c5ae       0x1b ./board/peripherals.o
- .debug_macro   0x0000c5c9      0x1cb ./board/pin_mux.o
- .debug_macro   0x0000c794       0x10 ./board/pin_mux.o
- .debug_macro   0x0000c7a4       0xbb ./CMSIS/system_MKL25Z4.o
+ .debug_macro   0x0000ac67      0x220 ./source/MKL25Z128xxx4_Project_ACC.o
+ .debug_macro   0x0000ae87       0x16 ./source/MKL25Z128xxx4_Project_ACC.o
+ .debug_macro   0x0000ae9d       0x10 ./source/MKL25Z128xxx4_Project_ACC.o
+ .debug_macro   0x0000aead      0x112 ./source/MKL25Z128xxx4_Project_ACC.o
+ .debug_macro   0x0000afbf       0x8e ./source/MKL25Z128xxx4_Project_ACC.o
+ .debug_macro   0x0000b04d       0x3a ./source/MKL25Z128xxx4_Project_ACC.o
+ .debug_macro   0x0000b087       0x10 ./source/MKL25Z128xxx4_Project_ACC.o
+ .debug_macro   0x0000b097       0x2f ./source/mtb.o
+ .debug_macro   0x0000b0c6       0x82 ./source/mtb.o
+ .debug_macro   0x0000b148       0x10 ./source/mtb.o
+ .debug_macro   0x0000b158       0x11 ./source/semihost_hardfault.o
+ .debug_macro   0x0000b169      0x26a ./drivers/fsl_clock.o
+ .debug_macro   0x0000b3d3      0x1c3 ./drivers/fsl_common.o
+ .debug_macro   0x0000b596      0x1c0 ./drivers/fsl_dma.o
+ .debug_macro   0x0000b756      0x1c0 ./drivers/fsl_gpio.o
+ .debug_macro   0x0000b916      0x1bf ./drivers/fsl_i2c.o
+ .debug_macro   0x0000bad5      0x1c0 ./drivers/fsl_lpsci.o
+ .debug_macro   0x0000bc95      0x1c0 ./drivers/fsl_pit.o
+ .debug_macro   0x0000be55      0x1bf ./drivers/fsl_spi.o
+ .debug_macro   0x0000c014       0x10 ./drivers/fsl_spi.o
+ .debug_macro   0x0000c024      0x1c6 ./drivers/fsl_uart.o
+ .debug_macro   0x0000c1ea      0x1e6 ./board/board.o
+ .debug_macro   0x0000c3d0      0x1f7 ./board/clock_config.o
+ .debug_macro   0x0000c5c7       0x1b ./board/peripherals.o
+ .debug_macro   0x0000c5e2      0x1cb ./board/pin_mux.o
+ .debug_macro   0x0000c7ad       0x10 ./board/pin_mux.o
+ .debug_macro   0x0000c7bd       0xbb ./CMSIS/system_MKL25Z4.o
 
 .debug_line     0x00000000     0x6803
  .debug_line    0x00000000      0x825 ./utilities/fsl_debug_console.o

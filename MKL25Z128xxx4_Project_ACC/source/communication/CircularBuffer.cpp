@@ -9,15 +9,27 @@
  * Zdroj
  * https://github.com/hudikm/TPRIS_CIRCULAR_BUFFER
  */
-#include "communication/CircularBuffer.h"
-#include <string.h>
-#include <assert.h>
 
-// Static function prototypes
-static inline uint8_t* incrementAddresBy(uint8_t* address, const buffer_t* buffer, size_t addNum) {
-	return (uint8_t *) (buffer->buf + (((address - buffer->buf) + addNum) % buffer->size));
+#include "communication/CircularBuffer.h"
+
+/**
+ * Increment address by
+ * @param address - pointer to address
+ * @param buffer - pointer to buffer_t struct
+ * @param addNum - number to be added
+ * @return number of added bytes
+ */
+static inline uint8_t* incrementAddresBy(uint8_t* address,
+		const buffer_t* buffer, size_t addNum) {
+	return (uint8_t *) (buffer->buf
+			+ (((address - buffer->buf) + addNum) % buffer->size));
 }
 
+/**
+ * Calculate number of written bytes
+ * @param buffer - pointer to buffer_t
+ * @return number of written bytes
+ */
 static inline size_t calcWriteCount(const buffer_t* buffer) {
 
 	if (buffer->head >= buffer->tail) {
@@ -27,6 +39,11 @@ static inline size_t calcWriteCount(const buffer_t* buffer) {
 	}
 }
 
+/**
+ * Calculate number of read bytes
+ * @param buffer - pointer to buffer_t
+ * @return number of read bytes
+ */
 static inline size_t calcReadCount(const buffer_t* buffer) {
 	if (buffer->head > buffer->tail) {
 		return buffer->head - buffer->tail;
@@ -46,7 +63,9 @@ int16_t bufferWrite(buffer_t* buff, uint8_t* data_pt, uint16_t count) {
 	int16_t size = 0;
 
 	assert((data_pt != NULL) && "Pointer data_pt is NULL");
-	assert((count <= buff->size) && "Write count is bigger than capacity of Circual Buffer");
+	assert(
+			(count <= buff->size)
+					&& "Write count is bigger than capacity of Circual Buffer");
 
 	if (buff->full == BUFF_FULL)
 		return 0;
@@ -77,10 +96,10 @@ int16_t bufferWrite(buffer_t* buff, uint8_t* data_pt, uint16_t count) {
 }
 /**
  * Retrieve a value from the buffer
- * @param buff
- * @param data_pt
- * @param count
- * @return
+ * @param buff - pointer to buffer_t
+ * @param data_pt - pointer to data handler
+ * @param count - number red bytes
+ * @return number red bytes
  */
 int16_t bufferRead(buffer_t* buff, uint8_t* data_pt, uint16_t count) {
 	int16_t size = 0;
@@ -116,9 +135,9 @@ int16_t bufferRead(buffer_t* buff, uint8_t* data_pt, uint16_t count) {
 }
 /**
  * Initialize the circular buffer handler
- * @param buff
- * @param bufferPt
- * @param size
+ * @param buff - pointer to buffer_t to init
+ * @param bufferPt - pointer to bufferPt
+ * @param size size of buffer_t
  */
 void bufferInit(buffer_t* buff, uint8_t* bufferPt, uint16_t size) {
 
@@ -131,8 +150,8 @@ void bufferInit(buffer_t* buff, uint8_t* bufferPt, uint16_t size) {
 
 /**
  * Returns the maximum capacity of the buffer
- * @param buff
- * @return
+ * @param buff - pointer to buffer_t
+ * @return the maximum capacity of the buffe
  */
 size_t bufferCapacity(buffer_t* buff) {
 	return buff->size;
@@ -140,8 +159,8 @@ size_t bufferCapacity(buffer_t* buff) {
 
 /**
  * Returns the current number of free bytes in the buffer
- * @param rb
- * @return
+ * @param rb - pointer to buffer_t
+ * @return the current number of free bytes in the buffer
  */
 size_t bufferBytesFree(const buffer_t *rb) {
 	if (rb->head >= rb->tail)
@@ -149,8 +168,4 @@ size_t bufferBytesFree(const buffer_t *rb) {
 	else
 		return rb->tail - rb->head;
 }
-
-
-
-
 
