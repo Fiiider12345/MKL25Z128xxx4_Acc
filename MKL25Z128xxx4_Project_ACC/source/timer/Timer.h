@@ -19,34 +19,39 @@ class Timer {
 
 public:
 	/**
-	*  Init PIT and enable interrupt from PIT
-	*/
+	 * Timer constructor
+	 *  Init PIT and enable interrupt from PIT
+	 */
 	Timer();
+
+	/**
+	 * Timer destructor
+	 */
 	virtual ~Timer();
 
 	/**
-	* this function start count the PIT
-	*/
+	 * this function start count the PIT
+	 */
 	void startTimer();
 
 	/**
-	* function set one of channel on time in parameter
-	* @param channel number of timer channel
-	* @param time_ms time in ms to expire channel
-	*/
+	 * function set one of channel on time in parameter
+	 * @param channel number of timer channel
+	 * @param time_ms time in ms to expire channel
+	 */
 	void setChannelTimer(uint8_t channel, int time_ms);
 
 	/**
-	* get actual counter of channel
-	* @param channel, channel from which counter will return
-	* @return counter of channel
-	*/
+	 * get actual counter of channel
+	 * @param channel, channel from which counter will return
+	 * @return counter of channel
+	 */
 	int getChannelTimer_ms(uint8_t channel);
 
 	/**
-	* @param channel
-	* @return  1 if timer counter of channel was expired jet else return 0
-	*/
+	 * @param channel
+	 * @return  1 if timer counter of channel was expired jet else return 0
+	 */
 	uint8_t isTimerExpired(uint8_t channel);
 };
 
