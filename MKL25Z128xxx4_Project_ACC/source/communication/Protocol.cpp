@@ -103,7 +103,6 @@ uint8_t Protocol::getCRC(uint8_t* data, uint8_t len) {
 			247, 182, 232, 10, 84, 215, 137, 107, 53 };
 
 	uint8_t crc = 0; //CRC_TABLE[data[0]];
-	//crc = CRC_TABLE[crc xor data[1]];
 
 	for (int i = 0; i <= len; i++) {
 		if (i != 2)

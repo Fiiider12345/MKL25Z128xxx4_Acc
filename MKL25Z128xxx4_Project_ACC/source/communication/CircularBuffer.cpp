@@ -52,13 +52,6 @@ static inline size_t calcReadCount(const buffer_t* buffer) {
 	}
 }
 
-/**
- * Copy data in the buffer until is full
- * @param buff - circular buffer handle
- * @param data_pt - pointer to data buffer
- * @param count -  size of data
- * @return number of copied bytes
- */
 int16_t bufferWrite(buffer_t* buff, uint8_t* data_pt, uint16_t count) {
 	int16_t size = 0;
 
@@ -94,13 +87,7 @@ int16_t bufferWrite(buffer_t* buff, uint8_t* data_pt, uint16_t count) {
 	}
 	return size;
 }
-/**
- * Retrieve a value from the buffer
- * @param buff - pointer to buffer_t
- * @param data_pt - pointer to data handler
- * @param count - number red bytes
- * @return number red bytes
- */
+
 int16_t bufferRead(buffer_t* buff, uint8_t* data_pt, uint16_t count) {
 	int16_t size = 0;
 
@@ -133,12 +120,7 @@ int16_t bufferRead(buffer_t* buff, uint8_t* data_pt, uint16_t count) {
 	}
 	return size;
 }
-/**
- * Initialize the circular buffer handler
- * @param buff - pointer to buffer_t to init
- * @param bufferPt - pointer to bufferPt
- * @param size size of buffer_t
- */
+
 void bufferInit(buffer_t* buff, uint8_t* bufferPt, uint16_t size) {
 
 	buff->buf = bufferPt;
@@ -148,20 +130,10 @@ void bufferInit(buffer_t* buff, uint8_t* bufferPt, uint16_t size) {
 	buff->full = BUFF_EMPTY;
 }
 
-/**
- * Returns the maximum capacity of the buffer
- * @param buff - pointer to buffer_t
- * @return the maximum capacity of the buffe
- */
 size_t bufferCapacity(buffer_t* buff) {
 	return buff->size;
 }
 
-/**
- * Returns the current number of free bytes in the buffer
- * @param rb - pointer to buffer_t
- * @return the current number of free bytes in the buffer
- */
 size_t bufferBytesFree(const buffer_t *rb) {
 	if (rb->head >= rb->tail)
 		return rb->full != BUFF_FULL ? ((rb->size) - (rb->head - rb->tail)) : 0;

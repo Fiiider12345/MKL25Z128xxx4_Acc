@@ -22,6 +22,21 @@
 #include <accelerometer/LIBRARYI2C.h>
 #include <math.h>
 
+#define REG_WHO_AM_I      0x0D	///Device ID (0x1A)
+#define REG_CTRL_REG_1    0x2A	///ODR = 800 Hz, standby mode.
+#define REG_CTRL_REG_4    0x2D	///Interrupt enable register
+#define REG_CTRL_REG_5    0x2E	///Interrupt pin (INT1/INT2) map
+#define REG_OUT_X_MSB     0x01	///[7:0] are eight MSBs of 14-bit sample.
+#define REG_OUT_Y_MSB     0x03	///[7:0] are eight MSBs of 14-bit realtime sample
+#define REG_OUT_Z_MSB     0x05	///[7:0] are eight MSBs of 14-bit realtime sample
+#define REG_FF_MT_CONFIG  0x15	///Freefall/motion functional block configuration
+#define REG_FF_MT_THS     0x17	///Freefall/motion threshold register
+#define REG_FF_MT_COUNT   0x18	///Freefall/motion debounce counter
+#define REG_FF_MT_SRC     0x16	///Freefall/motion event source register
+
+#define PI 3.141592653589793	///Value of PI
+#define UINT14_MAX        16383
+
 class MMA8451Q {
 public:
 	/**

@@ -14,7 +14,7 @@ class LIBRARY_I2C {
 
 private:
 	I2C_Type* I2C_base;	///I2C base pointer
-	i2c_master_config_t master_config;///A pointer to the master configuration structure
+	i2c_master_config_t master_config;///master configuration structure
 	i2c_master_transfer_t master_xfer;	///I2C master transfer structure
 
 public:

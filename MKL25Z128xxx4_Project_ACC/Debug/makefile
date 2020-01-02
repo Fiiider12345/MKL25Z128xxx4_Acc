@@ -11,6 +11,8 @@ RM := rm -rf
 -include utilities/subdir.mk
 -include startup/subdir.mk
 -include source/timer/subdir.mk
+-include source/program/subdir.mk
+-include source/elevator/subdir.mk
 -include source/communication/subdir.mk
 -include source/accelerometer/subdir.mk
 -include source/subdir.mk
