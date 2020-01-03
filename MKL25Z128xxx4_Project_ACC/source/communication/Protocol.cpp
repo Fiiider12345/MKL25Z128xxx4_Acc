@@ -7,6 +7,7 @@
 
 #include <communication/Protocol.h>
 
+//Zadanie komunikacny protokol
 Protocol::Protocol() {
 }
 

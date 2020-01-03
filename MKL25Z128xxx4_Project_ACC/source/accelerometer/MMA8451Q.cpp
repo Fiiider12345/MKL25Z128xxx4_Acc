@@ -18,6 +18,7 @@
 
 #include <accelerometer/MMA8451Q.h>
 
+//MMA8451Q documentation
 MMA8451Q::MMA8451Q(uint8_t my_i2c_addr) {
 	// activate the peripheral
 	this->my_i2c_addr = my_i2c_addr;

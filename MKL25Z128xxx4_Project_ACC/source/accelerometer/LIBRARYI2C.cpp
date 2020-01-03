@@ -7,6 +7,7 @@
 
 #include <accelerometer/LIBRARYI2C.h>
 
+//API page 125 + 146
 LIBRARY_I2C::LIBRARY_I2C(I2C_Type* I2C_base, uint32_t frequency_i2c) {
 	this->I2C_base = I2C_base;
 	I2C_MasterGetDefaultConfig(&master_config);

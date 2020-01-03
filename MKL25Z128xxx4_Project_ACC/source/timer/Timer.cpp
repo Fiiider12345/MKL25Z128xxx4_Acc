@@ -22,6 +22,7 @@ extern "C" void PIT_IRQHandler(void) {
 	}
 }
 
+//API page 210
 Timer::Timer() {
 	pit_config_t pitConfig;
 	PIT_GetDefaultConfig(&pitConfig);
