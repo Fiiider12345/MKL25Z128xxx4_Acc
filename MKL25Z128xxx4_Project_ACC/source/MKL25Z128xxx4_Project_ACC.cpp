@@ -54,7 +54,6 @@ int main(void) {
 	BOARD_InitDebugConsole();
 
 	CBufferUart_Init();
-	PRINTF("Start_ELEVATOR\n\r");
 
 	Program program;
 	program.start();
