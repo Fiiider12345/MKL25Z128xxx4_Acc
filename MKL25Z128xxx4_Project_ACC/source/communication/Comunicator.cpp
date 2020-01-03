@@ -5,20 +5,20 @@
  *      Author: marek
  */
 
-#include <communication/Protocol.h>
+#include <communication/Comunicator.h>
 
 //Zadanie komunikacny protokol
-Protocol::Protocol() {
+Comunicator::Comunicator() {
 }
 
-Protocol::~Protocol() {
+Comunicator::~Comunicator() {
 }
 
-void Protocol::sendComand(uint8_t destination, uint8_t comand) {
+void Comunicator::sendCommand(uint8_t destination, uint8_t comand) {
 	sendMessage(destination, &comand, 1);
 }
 
-void Protocol::sendMessage(uint8_t destination, uint8_t* data,
+void Comunicator::sendMessage(uint8_t destination, uint8_t* data,
 		uint8_t datalen) {
 
 	uint8_t message[MESSAGE_BUFFER_SIZE + 6];
@@ -40,18 +40,18 @@ void Protocol::sendMessage(uint8_t destination, uint8_t* data,
 	} while (!receiveACK()); // if not received ACK try again send message
 }
 
-uint8_t Protocol::receiveACK() {
+uint8_t Comunicator::receiveACK() {
 	if (!PROTECT_MODE)
 		return TRUE;
 	return FALSE;
 }
 
-void Protocol::get_char_blocking(uint8_t* ch) {
+void Comunicator::get_char_blocking(uint8_t* ch) {
 	while (!get_char(ch))
 		;
 }
 
-uint8_t Protocol::receivedMessage(uint8_t* data, uint8_t* length) {
+uint8_t Comunicator::receivedMessage(uint8_t* data, uint8_t* length) {
 	if (!get_char(data) || ((*data) != START_MESSAGE))
 		return 0;
 
@@ -65,7 +65,7 @@ uint8_t Protocol::receivedMessage(uint8_t* data, uint8_t* length) {
 	return 1;
 }
 
-uint8_t Protocol::receivedMessage(uint8_t* data, uint8_t* source_address,
+uint8_t Comunicator::receivedMessage(uint8_t* data, uint8_t* source_address,
 		uint8_t* lenght) {
 
 	uint8_t pomData[MAX_MESSAGE_SIZE];
@@ -82,7 +82,7 @@ uint8_t Protocol::receivedMessage(uint8_t* data, uint8_t* source_address,
 	return 1;
 }
 
-uint8_t Protocol::getCRC(uint8_t* data, uint8_t len) {
+uint8_t Comunicator::getCRC(uint8_t* data, uint8_t len) {
 
 	const uint8_t CRC_TABLE[] = { 0, 94, 188, 226, 97, 63, 221, 131, 194, 156,
 			126, 32, 163, 253, 31, 65, 157, 195, 33, 127, 252, 162, 64, 30, 95,

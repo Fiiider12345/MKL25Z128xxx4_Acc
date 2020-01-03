@@ -5,8 +5,8 @@
  *      Author: marek
  */
 
-#ifndef COMMUNICATION_PROTOCOL_H_
-#define COMMUNICATION_PROTOCOL_H_
+#ifndef COMMUNICATION_COMUNICATOR_H_
+#define COMMUNICATION_COMUNICATOR_H_
 
 #include <stdio.h>
 #include <communication/CircularBufferUart.h>
@@ -21,17 +21,17 @@
 #define PROTECT_MODE FALSE /// define that be used ACK
 #define MAX_MESSAGE_SIZE MESSAGE_BUFFER_SIZE+6 /// define maximum size of packet
 
-class Protocol {
+class Comunicator {
 public:
 	/**
 	 * Constructor
 	 */
-	Protocol();
+	Comunicator();
 
 	/**
 	 * Destructor
 	 */
-	virtual ~Protocol();
+	virtual ~Comunicator();
 
 	/**
 	 * send message (packet) to destination
@@ -46,7 +46,7 @@ public:
 	 * @param destination
 	 * @param comand one bytes, which is comand for some element
 	 */
-	void sendComand(uint8_t destination, uint8_t comand);
+	void sendCommand(uint8_t destination, uint8_t comand);
 
 	/**
 	 *read packet from serial line
@@ -88,4 +88,4 @@ private:
 
 };
 
-#endif /* COMMUNICATION_PROTOCOL_H_ */
+#endif /* COMMUNICATION_COMUNICATOR_H_ */

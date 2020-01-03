@@ -8,7 +8,7 @@ source/MKL25Z128xxx4_Project_ACC.o source/MKL25Z128xxx4_Project_ACC.d: \
  ../drivers/fsl_common.h ../drivers/fsl_gpio.h ../board/peripherals.h \
  ../board/pin_mux.h ../board/clock_config.h ../CMSIS/MKL25Z4.h \
  ../utilities/fsl_debug_console.h ../source/program/Program.h \
- ../source/elevator/Elevator.h ../source/communication/Protocol.h \
+ ../source/elevator/Elevator.h ../source/communication/Comunicator.h \
  ../source/communication/CircularBufferUart.h ../drivers/fsl_lpsci.h \
  ../source/communication/CircularBuffer.h ../source/elevator/Cabin.h \
  ../source/elevator/Display.h ../source/timer/Timer.h \
@@ -58,7 +58,7 @@ source/MKL25Z128xxx4_Project_ACC.o source/MKL25Z128xxx4_Project_ACC.d: \
 
 ../source/elevator/Elevator.h:
 
-../source/communication/Protocol.h:
+../source/communication/Comunicator.h:
 
 ../source/communication/CircularBufferUart.h:
 
