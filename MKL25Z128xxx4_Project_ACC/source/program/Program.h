@@ -20,11 +20,11 @@
  */
 class Program {
 private:
-	Elevator* elevator;
-	uint8_t running;
-	EmergencyBreak *emergencyBreak;
-	Button *button;
-	Switch *mySwitch;
+	Elevator* elevator; /// pointer to elevator
+	uint8_t running; /// 1 if elevator is running
+	EmergencyBreak *emergencyBreak; /// pointer to emergencyBreak
+	Button *button; /// pointer to button
+	Switch *mySwitch; /// pointer to switch
 
 public:
 	/**

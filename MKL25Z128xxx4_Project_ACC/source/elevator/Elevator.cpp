@@ -32,6 +32,7 @@ Elevator::Elevator() {
 
 Elevator::~Elevator() {
 	delete watchdog;
+	delete engine;
 }
 
 uint8_t Elevator::controlWatchdog() {

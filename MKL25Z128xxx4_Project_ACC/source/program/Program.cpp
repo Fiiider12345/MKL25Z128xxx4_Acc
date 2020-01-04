@@ -30,6 +30,10 @@ Program::Program() {
 
 Program::~Program() {
 	delete accel;
+	delete elevator;
+	delete emergencyBreak;
+	delete button;
+	delete mySwitch;
 }
 
 uint8_t Program::start() {
