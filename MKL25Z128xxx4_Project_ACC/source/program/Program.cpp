@@ -22,6 +22,8 @@ Program::Program() {
 	freeFall = 0;
 	NVIC_EnableIRQ (PORTA_IRQn);
 	accel = new MMA8451Q(0x1D);
+	elevator = new Elevator();
+	emergencyBreak = new EmergencyBreak(elevator);
 }
 
 Program::~Program() {
@@ -31,9 +33,9 @@ Program::~Program() {
 uint8_t Program::start() {
 	running = 1;
 	while (running) {
-		elevator.controlWatchdog();
-		elevator.controlInput();
-		elevator.controlReceiveComand();
+		elevator->controlWatchdog();
+		elevator->controlInput();
+		controlReceiveComand();
 		controlFreeFall();
 	}
 	//vratenie vytahu na prizemie
@@ -46,9 +48,18 @@ uint8_t Program::stop() {
 }
 
 uint8_t Program::controlFreeFall() {
-	elevator.handBreak(freeFall);
+	emergencyBreak->handBreak(freeFall);
 	if (freeFall)
 		freeFall = FALSE;
 	return freeFall;
+}
+
+uint8_t Program::controlReceiveComand() {
+	if (!elevator->getSuccessReceive() || emergencyBreak->getEmergencyBreakActiv())
+		return 0;
+	elevator->controlButtons();
+	elevator->controlFloors();
+	elevator->controlMove();
+	return 0;
 }
 

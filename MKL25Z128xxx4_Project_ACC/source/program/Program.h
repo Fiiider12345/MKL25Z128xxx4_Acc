@@ -11,14 +11,16 @@
 #include <elevator/Elevator.h>
 #include <accelerometer/MMA8451Q.h>
 #include <fsl_gpio.h>
+#include <elevator/EmergencyBreak.h>
 
 /**
  * represent program of elevator
  */
 class Program {
 private:
-	Elevator elevator;
+	Elevator* elevator;
 	uint8_t running;
+	EmergencyBreak *emergencyBreak;
 
 public:
 	/**
@@ -46,6 +48,12 @@ private:
 	 * fuction, that provide control the elevator when freeFall occured
 	 */
 	uint8_t controlFreeFall();
+
+	/**
+	 * control main functions of elevator
+	 * @return 0
+	 */
+	uint8_t controlReceiveComand();
 };
 
 #endif /* PROGRAM_PROGRAM_H_ */

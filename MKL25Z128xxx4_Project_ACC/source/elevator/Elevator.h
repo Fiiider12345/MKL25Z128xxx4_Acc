@@ -99,7 +99,6 @@ private:
 	double position; /// position of elevator motors
 	uint8_t direction; /// actually direction of elevator move
 	uint8_t inMove; /// information that elevator is in move
-	uint8_t emergencyBreakActiv; /// information that emergency break is active
 public:
 
 	/**
@@ -113,12 +112,6 @@ public:
 	virtual ~Elevator();
 
 	/**
-	 * function active emergency break
-	 * @param active set to 1 for active, or to 0 for deactivate
-	 */
-	uint8_t set_emergencyBreak(uint8_t active);
-
-	/**
 	 * control watchdog timer of elevator
 	 */
 	uint8_t controlWatchdog();
@@ -128,18 +121,7 @@ public:
 	 */
 	uint8_t controlInput();
 
-	/**
-	 * control main functions of elevator
-	 */
-	uint8_t controlReceiveComand();
-
-	/**
-	 * control emergency break of elevator
-	 * @param freeFall set to 1 if freefall occurred clear
-	 */
-	uint8_t handBreak(uint8_t freeFall);
-
-private:
+//private:
 
 	/**
 	 * control if some button was been press, if yes do reaction
@@ -224,6 +206,18 @@ private:
 	 * @return 0 when distance are same
 	 */
 	int getNearestMove();
+
+	/**
+	 * Timer getter
+	 * @return timer
+	 */
+	Timer getTimer();
+
+	/**
+	 * getter
+	 * @return succesReceive
+	 */
+	uint8_t getSuccessReceive();
 };
 
 #endif /* ELEVATOR_ELEVATOR_H_ */

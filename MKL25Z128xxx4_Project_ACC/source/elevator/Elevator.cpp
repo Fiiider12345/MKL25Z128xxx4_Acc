@@ -15,7 +15,6 @@ Elevator::Elevator() {
 	engine = new Engine(&timer);
 
 	inMove = FALSE;
-	emergencyBreakActiv = FALSE;
 
 	position = engine->getPosition();
 	floor = (uint8_t) round(position);
@@ -25,7 +24,7 @@ Elevator::Elevator() {
 	lastFloor = 0xFF;
 
 	watchdog->timeOutReset();
-	set_emergencyBreak(FALSE);
+
 	timer.startTimer();
 	watchdog->timeOutReset();
 
@@ -48,15 +47,6 @@ uint8_t Elevator::controlInput() {
 	successReceive = comunicator.receivedMessage(inData, &receivedSource,
 			&receivedLenght);
 	return successReceive;
-}
-
-uint8_t Elevator::controlReceiveComand() {
-	if (!successReceive || emergencyBreakActiv)
-		return 0;
-	controlButtons();
-	controlFloors();
-	controlMove();
-	return 0;
 }
 
 uint8_t Elevator::controlButtons() {
@@ -342,35 +332,10 @@ void Elevator::set_led_onFloor(uint8_t floor_p, uint8_t led_status) {
 	}
 }
 
-uint8_t Elevator::handBreak(uint8_t freeFall) {
-
-	if (freeFall) {
-		if (emergencyBreakActiv) {
-			return TRUE;
-		}
-		set_emergencyBreak(TRUE);
-		timer.setChannelTimer(timerChannel_emergencyBreak,
-		EMERGENCY_BREAK_ACTIVE_TIME_MS);
-		stopMove();
-		return TRUE;
-	} else {
-		if (emergencyBreakActiv
-				&& timer.isTimerExpired(timerChannel_emergencyBreak)) {
-			set_emergencyBreak(FALSE);
-			startMove();
-			return FALSE;
-		}
-	}
-	return TRUE;
+Timer Elevator::getTimer(){
+	return timer;
 }
 
-uint8_t Elevator::set_emergencyBreak(uint8_t active) {
-	emergencyBreakActiv = active;
-	if (active) {
-		comunicator.sendCommand(ELEVATOR_EMERGENCY_BREAK, emb_activateBreak);
-	} else {
-		comunicator.sendCommand(ELEVATOR_EMERGENCY_BREAK,
-				emb_deactivateBreak);
-	}
-	return 0;
+uint8_t Elevator::getSuccessReceive() {
+	return successReceive;
 }

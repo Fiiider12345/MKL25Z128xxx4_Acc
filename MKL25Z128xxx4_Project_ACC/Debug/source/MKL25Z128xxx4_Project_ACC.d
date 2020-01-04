@@ -14,7 +14,8 @@ source/MKL25Z128xxx4_Project_ACC.o source/MKL25Z128xxx4_Project_ACC.d: \
  ../source/elevator/Display.h ../source/timer/Timer.h \
  ../drivers/fsl_pit.h ../source/elevator/Engine.h \
  ../source/elevator/Watchdog.h ../source/accelerometer/MMA8451Q.h \
- ../source/accelerometer/LIBRARYI2C.h ../drivers/fsl_i2c.h
+ ../source/accelerometer/LIBRARYI2C.h ../drivers/fsl_i2c.h \
+ ../source/elevator/EmergencyBreak.h
 
 ../board/board.h:
 
@@ -83,3 +84,5 @@ source/MKL25Z128xxx4_Project_ACC.o source/MKL25Z128xxx4_Project_ACC.d: \
 ../source/accelerometer/LIBRARYI2C.h:
 
 ../drivers/fsl_i2c.h:
+
+../source/elevator/EmergencyBreak.h:
