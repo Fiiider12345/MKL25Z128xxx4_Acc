@@ -29,7 +29,8 @@ uint8_t EmergencyBreak::handBreak(uint8_t freeFall) {
 		return TRUE;
 	} else {
 		if (emergencyBreakActiv
-				&& elevator->getTimer().isTimerExpired(timerChannel_emergencyBreak)) {
+				&& elevator->getTimer().isTimerExpired(
+						timerChannel_emergencyBreak)) {
 			set_emergencyBreak(FALSE);
 			elevator->startMove();
 			return FALSE;

@@ -13,6 +13,8 @@
 
 #define ELEVATOR_CABIN 0xF0 ///address of cabin
 
+#define BLOCK_DOOR_TIME_MS 5000 ///defines open doors time
+
 #define FALSE 0
 #define TRUE 1
 

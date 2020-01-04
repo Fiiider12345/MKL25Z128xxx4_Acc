@@ -16,9 +16,19 @@
 #define TRUE 1
 
 #define ELEVATOR_EMERGENCY_BREAK 0x0F ///defines address of EMERGENCY BREAK
-
 #define EMERGENCY_BREAK_ACTIVE_TIME_MS 10000 ///defines how long activate emergency break when freefall detect
 
+/**
+ * commands for emergency break
+ */
+enum emergency_break_command {
+	emb_deactivateBreak, /// (0x00) deactivate emergency break
+	emb_activateBreak /// (0x01) activate emergency break
+};
+
+/**
+ * represent emergency break of elvator
+ */
 class EmergencyBreak {
 private:
 	uint8_t emergencyBreakActiv; /// information that emergency break is active

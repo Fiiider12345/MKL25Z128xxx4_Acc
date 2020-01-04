@@ -24,6 +24,8 @@ Program::Program() {
 	accel = new MMA8451Q(0x1D);
 	elevator = new Elevator();
 	emergencyBreak = new EmergencyBreak(elevator);
+	button = new Button(elevator);
+	mySwitch = new Switch(elevator);
 }
 
 Program::~Program() {
@@ -57,8 +59,8 @@ uint8_t Program::controlFreeFall() {
 uint8_t Program::controlReceiveComand() {
 	if (!elevator->getSuccessReceive() || emergencyBreak->getEmergencyBreakActiv())
 		return 0;
-	elevator->controlButtons();
-	elevator->controlFloors();
+	button->controlButtons();
+	mySwitch->controlFloors();
 	elevator->controlMove();
 	return 0;
 }

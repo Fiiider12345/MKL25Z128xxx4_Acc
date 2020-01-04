@@ -14,6 +14,9 @@
 
 #define ELEVATOR_ENGINE 0xF1 ///defines address of ENGINE
 
+#define CHECK_POSITION_TIMEOUT_MS 50 ///defines time how quickly must engine send response
+#define FLOORS 5 ///defines numbers of floor
+
 #define DEFAULT_ENGINE_SPEED 50 ///defines default engine speed
 #define MESSAGE_BUFFER_SIZE 256 ///defines maximum size of usefull data
 

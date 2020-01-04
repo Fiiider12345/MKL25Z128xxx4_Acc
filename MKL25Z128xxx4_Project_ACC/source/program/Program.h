@@ -12,6 +12,8 @@
 #include <accelerometer/MMA8451Q.h>
 #include <fsl_gpio.h>
 #include <elevator/EmergencyBreak.h>
+#include <elevator/Button.h>
+#include <elevator/Switch.h>
 
 /**
  * represent program of elevator
@@ -21,6 +23,8 @@ private:
 	Elevator* elevator;
 	uint8_t running;
 	EmergencyBreak *emergencyBreak;
+	Button *button;
+	Switch *mySwitch;
 
 public:
 	/**
