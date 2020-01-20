@@ -1,0 +1,5 @@
+<map id="Elevator::getFloor" name="Elevator::getFloor">
+<area shape="rect" id="node1" title=" " alt="" coords="205,31,328,57"/>
+<area shape="rect" id="node2" href="$class_button.html#a47bd86ebc5bfcf289848cc316c914dc4" title=" " alt="" coords="5,5,157,32"/>
+<area shape="rect" id="node3" href="$class_switch.html#a36c85ab99064b9b9a14cf6cca3ca833e" title=" " alt="" coords="9,56,153,83"/>
+</map>

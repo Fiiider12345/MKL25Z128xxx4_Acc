@@ -40,9 +40,11 @@ void Comunicator::sendMessage(uint8_t destination, uint8_t* data,
 	} while (!receiveACK()); // if not received ACK try again send message
 }
 
+
 uint8_t Comunicator::receiveACK() {
-	if (!PROTECT_MODE)
+	if (!PROTECT_MODE) {
 		return TRUE;
+}
 	return FALSE;
 }
 

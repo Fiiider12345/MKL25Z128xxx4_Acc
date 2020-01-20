@@ -25,6 +25,15 @@
 #define LIMIT_SWITCH_P 0xE0
 
 /**
+ * commands for switch
+ */
+enum switch_command {
+	switch_low = 0x00, /// (0x00) Switch low
+	switch_wide, /// (0x01) The cabin is in wide proximity
+	switch_narrow /// (0x02) The cabin is in narrow proximity
+};
+
+/**
  * represent floors switches
  */
 class Switch {

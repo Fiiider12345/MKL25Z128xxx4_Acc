@@ -54,6 +54,7 @@ int Timer::getChannelTimer_ms(uint8_t channel) {
 }
 
 uint8_t Timer::isTimerExpired(uint8_t channel) {
+	
 	if (channelTimer[channel])
 		return false;
 	return true;

@@ -1,0 +1,10 @@
+<map id="Led::set_led" name="Led::set_led">
+<area shape="rect" id="node1" title=" " alt="" coords="636,81,729,108"/>
+<area shape="rect" id="node2" href="$class_led.html#aa340cedff4589317300817d33fd707d2" title=" " alt="" coords="445,81,588,108"/>
+<area shape="rect" id="node3" href="$class_button.html#a47bd86ebc5bfcf289848cc316c914dc4" title=" " alt="" coords="245,5,397,32"/>
+<area shape="rect" id="node4" href="$class_switch.html#a36c85ab99064b9b9a14cf6cca3ca833e" title=" " alt="" coords="249,56,393,83"/>
+<area shape="rect" id="node5" href="$class_led.html#a13f58f691eaa4b8b964a2b245e8dc1af" title=" " alt="" coords="285,107,357,133"/>
+<area shape="rect" id="node6" href="$class_elevator.html#a1c23f165b64eb4a5544d652183bcafee" title=" " alt="" coords="255,157,387,184"/>
+<area shape="rect" id="node7" href="$class_elevator.html#adb756b7c884cebc0a14453dd4472787c" title=" " alt="" coords="29,132,174,159"/>
+<area shape="rect" id="node8" href="$class_emergency_break.html#a9fad693913f258917e597fc67d7d770e" title=" " alt="" coords="5,183,197,209"/>
+</map>

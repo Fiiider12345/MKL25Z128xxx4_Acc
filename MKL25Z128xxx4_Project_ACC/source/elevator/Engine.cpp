@@ -50,6 +50,7 @@ double Engine::getPosition() {
 
 	double* d = (double *) data;
 	double position = (*d) * (0.004057) + 4.05; //0.004057
+	//double position = (*d) * (1.0);
 	if (position > 4)
 		position = 4;
 	if (position < 0)

@@ -1,0 +1,7 @@
+<map id="Cabin::OpenDoor" name="Cabin::OpenDoor">
+<area shape="rect" id="node1" title=" " alt="" coords="445,31,567,57"/>
+<area shape="rect" id="node2" href="$class_button.html#a47bd86ebc5bfcf289848cc316c914dc4" title=" " alt="" coords="245,5,397,32"/>
+<area shape="rect" id="node3" href="$class_elevator.html#a1c23f165b64eb4a5544d652183bcafee" title=" " alt="" coords="255,56,387,83"/>
+<area shape="rect" id="node4" href="$class_elevator.html#adb756b7c884cebc0a14453dd4472787c" title=" " alt="" coords="29,31,174,57"/>
+<area shape="rect" id="node5" href="$class_emergency_break.html#a9fad693913f258917e597fc67d7d770e" title=" " alt="" coords="5,81,197,108"/>
+</map>

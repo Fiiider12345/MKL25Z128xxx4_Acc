@@ -1,0 +1,7 @@
+<map id="Cabin::lockDoor" name="Cabin::lockDoor">
+<area shape="rect" id="node1" title=" " alt="" coords="425,31,540,57"/>
+<area shape="rect" id="node2" href="$class_cabin.html#a9f73e9137a058e7d4fc354e12dee01c7" title="information if door is lock" alt="" coords="263,5,359,32"/>
+<area shape="rect" id="node3" href="$class_elevator.html#a1c23f165b64eb4a5544d652183bcafee" title=" " alt="" coords="245,56,377,83"/>
+<area shape="rect" id="node4" href="$class_elevator.html#adb756b7c884cebc0a14453dd4472787c" title=" " alt="" coords="29,31,174,57"/>
+<area shape="rect" id="node5" href="$class_emergency_break.html#a9fad693913f258917e597fc67d7d770e" title=" " alt="" coords="5,81,197,108"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="Timer::setChannelTimer" name="Timer::setChannelTimer">
+<area shape="rect" id="node1" title=" " alt="" coords="732,157,891,184"/>
+<area shape="rect" id="node2" href="$class_button.html#a47bd86ebc5bfcf289848cc316c914dc4" title=" " alt="" coords="515,5,667,32"/>
+<area shape="rect" id="node3" href="$class_elevator.html#a91a09a082d8bb44d953a1896e42089e2" title=" " alt="" coords="272,107,435,133"/>
+<area shape="rect" id="node4" href="$class_watchdog.html#a762d9bf3b623ba48415c2b4a885c8d37" title=" " alt="" coords="497,56,684,83"/>
+<area shape="rect" id="node8" href="$class_engine.html#afaa814fc361fbd45990e401d226c95ce" title=" " alt="" coords="523,157,658,184"/>
+<area shape="rect" id="node10" href="$class_emergency_break.html#a9fad693913f258917e597fc67d7d770e" title=" " alt="" coords="257,208,449,235"/>
+<area shape="rect" id="node11" href="$class_elevator.html#a84602214df3d74b0f45b905c4ce7fb0b" title=" " alt="" coords="525,259,656,285"/>
+<area shape="rect" id="node13" href="$class_watchdog.html#aa985dd52e5e0829cc4e551357c973ca8" title=" " alt="" coords="517,309,665,336"/>
+<area shape="rect" id="node5" href="$class_elevator.html#a8f1dd1dbc2a2f7f8cb28a7e15597d27b" title=" " alt="" coords="266,56,441,83"/>
+<area shape="rect" id="node6" href="$class_program.html#ad39242c864486c9c93135848d08b0c9f" title=" " alt="" coords="104,56,209,83"/>
+<area shape="rect" id="node7" href="$_m_k_l25_z128xxx4___project___a_c_c_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,56,56,83"/>
+<area shape="rect" id="node9" href="$class_elevator.html#a42ec2949d6e5f9bf90c361933562eb5f" title="information that elevator is in move" alt="" coords="292,157,415,184"/>
+<area shape="rect" id="node12" href="$class_elevator.html#adb756b7c884cebc0a14453dd4472787c" title=" " alt="" coords="281,259,426,285"/>
+</map>

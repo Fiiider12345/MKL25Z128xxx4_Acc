@@ -16,7 +16,7 @@
 #define TRUE 1
 
 #define ELEVATOR_EMERGENCY_BREAK 0x0F ///defines address of EMERGENCY BREAK
-#define EMERGENCY_BREAK_ACTIVE_TIME_MS 10000 ///defines how long activate emergency break when freefall detect
+#define EMERGENCY_BREAK_ACTIVE_TIME_MS 5000 ///defines how long activate emergency break when freefall detect
 
 /**
  * commands for emergency break

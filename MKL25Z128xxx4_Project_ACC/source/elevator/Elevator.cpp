@@ -186,10 +186,12 @@ int Elevator::getNearestMove() {
 
 uint8_t Elevator::is_floorRequestUp() {
 	return floorRequestsFlags & (0xFF << floor); //if floor=2 mas is 1111 1000
+	//return floorRequestsFlags & (0x00 << floor);
 }
 
 uint8_t Elevator::is_floorRequestDown() {
 	return floorRequestsFlags & ~(0xFF << floor); //if floor=2  mask is for 0&1 = ~(1111 1100) = 0000 0011
+	//return floorRequestsFlags & ~(0x00 << floor);
 }
 
 uint8_t Elevator::is_floorRequest() {

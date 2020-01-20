@@ -1,0 +1,13 @@
+<map id="bufferRead" name="bufferRead">
+<area shape="rect" id="node1" title=" " alt="" coords="1000,81,1083,108"/>
+<area shape="rect" id="node2" href="$_circular_buffer_uart_8h.html#aa91e1bbcefcfdc562d410aeef32dee84" title=" " alt="" coords="848,56,920,83"/>
+<area shape="rect" id="node11" href="$_circular_buffer_uart_8cpp.html#a1c0544b06d54b198d8c50f507e399a91" title=" " alt="" coords="816,107,952,133"/>
+<area shape="rect" id="node3" href="$class_comunicator.html#a2e2d066adbc16935da7978c160ba6962" title=" " alt="" coords="565,56,768,83"/>
+<area shape="rect" id="node4" href="$class_elevator.html#ab75b91fe5c655c4134b96f7900d99eb8" title=" " alt="" coords="345,5,487,32"/>
+<area shape="rect" id="node7" href="$class_engine.html#afaa814fc361fbd45990e401d226c95ce" title=" " alt="" coords="349,56,483,83"/>
+<area shape="rect" id="node10" href="$class_comunicator.html#a2c9f1b85ecc383e96098aa4a3682f254" title=" " alt="" coords="315,107,517,133"/>
+<area shape="rect" id="node5" href="$class_program.html#ad39242c864486c9c93135848d08b0c9f" title=" " alt="" coords="133,5,238,32"/>
+<area shape="rect" id="node6" href="$_m_k_l25_z128xxx4___project___a_c_c_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,56,32"/>
+<area shape="rect" id="node8" href="$class_elevator.html#a91a09a082d8bb44d953a1896e42089e2" title=" " alt="" coords="104,56,267,83"/>
+<area shape="rect" id="node9" href="$class_elevator.html#a42ec2949d6e5f9bf90c361933562eb5f" title="information that elevator is in move" alt="" coords="124,107,247,133"/>
+</map>

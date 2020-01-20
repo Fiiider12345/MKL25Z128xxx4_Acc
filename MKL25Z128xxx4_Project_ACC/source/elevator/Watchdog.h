@@ -14,7 +14,7 @@
 
 #define ELEVATOR_WATCHDOG_TIMER 0xFE ///defines address of WATCHDOG TIMER
 
-#define WATCHDOG_PERIODE_TIME_MS 250 ///defines period for send reset command for elevators  Watchdog
+#define WATCHDOG_PERIODE_TIME_MS 500 ///defines period for send reset command for elevators  Watchdog
 
 /**
  * commands for watchdog timer

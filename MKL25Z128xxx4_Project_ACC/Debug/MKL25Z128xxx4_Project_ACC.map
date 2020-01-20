@@ -2538,7 +2538,7 @@ Discarded input sections
  .debug_macro   0x00000000       0xf4 ./drivers/fsl_cmp.o
  .debug_macro   0x00000000       0x35 ./drivers/fsl_cmp.o
  .debug_line    0x00000000      0x4eb ./drivers/fsl_cmp.o
- .debug_str     0x00000000    0x33684 ./drivers/fsl_cmp.o
+ .debug_str     0x00000000    0x33696 ./drivers/fsl_cmp.o
  .comment       0x00000000       0x7f ./drivers/fsl_cmp.o
  .debug_frame   0x00000000      0x1f0 ./drivers/fsl_cmp.o
  .ARM.attributes
@@ -4255,7 +4255,7 @@ Discarded input sections
  .debug_macro   0x00000000       0xf4 ./drivers/fsl_pmc.o
  .debug_macro   0x00000000       0x35 ./drivers/fsl_pmc.o
  .debug_line    0x00000000      0x392 ./drivers/fsl_pmc.o
- .debug_str     0x00000000    0x32ee8 ./drivers/fsl_pmc.o
+ .debug_str     0x00000000    0x32efa ./drivers/fsl_pmc.o
  .comment       0x00000000       0x7f ./drivers/fsl_pmc.o
  .debug_frame   0x00000000       0x70 ./drivers/fsl_pmc.o
  .ARM.attributes
@@ -8079,86 +8079,86 @@ OUTPUT(MKL25Z128xxx4_Project_ACC.axf elf32-littlearm)
  .debug_line    0x0000c52c      0x115 c:/myapps/mcuxpressoide_10.2.1_795/ide/tools/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m\libcr_newlib_nohost.a(kill.o)
  .debug_line    0x0000c641       0x53 c:/myapps/mcuxpressoide_10.2.1_795/ide/tools/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m\libcr_newlib_nohost.a(_cr_check_heap.o)
 
-.debug_str      0x00000000    0x403ec
+.debug_str      0x00000000    0x4038f
  .debug_str     0x00000000    0x33e5c ./utilities/fsl_debug_console.o
                               0x343ba (size before relaxing)
  .debug_str     0x00033e5c      0x961 ./startup/startup_mkl25z4.o
                                0x34f7 (size before relaxing)
  .debug_str     0x000347bd     0x2462 ./source/timer/Timer.o
                               0x3628e (size before relaxing)
- .debug_str     0x00036c1f     0x1ba5 ./source/program/Program.o
-                              0x376b5 (size before relaxing)
- .debug_str     0x000387c4      0x1b1 ./source/elevator/Button.o
+ .debug_str     0x00036c1f     0x1ba4 ./source/program/Program.o
+                              0x376b4 (size before relaxing)
+ .debug_str     0x000387c3      0x1b1 ./source/elevator/Button.o
                               0x36f21 (size before relaxing)
- .debug_str     0x00038975      0x137 ./source/elevator/Cabin.o
+ .debug_str     0x00038974      0x137 ./source/elevator/Cabin.o
                               0x34636 (size before relaxing)
- .debug_str     0x00038aac      0x14a ./source/elevator/Display.o
+ .debug_str     0x00038aab      0x14a ./source/elevator/Display.o
                               0x3467f (size before relaxing)
- .debug_str     0x00038bf6      0x57e ./source/elevator/Elevator.o
+ .debug_str     0x00038bf5      0x57e ./source/elevator/Elevator.o
                               0x373d9 (size before relaxing)
- .debug_str     0x00039174      0x1f5 ./source/elevator/EmergencyBreak.o
-                              0x36fb7 (size before relaxing)
- .debug_str     0x00039369      0x1ac ./source/elevator/Engine.o
+ .debug_str     0x00039173      0x1f5 ./source/elevator/EmergencyBreak.o
+                              0x36fb6 (size before relaxing)
+ .debug_str     0x00039368      0x1ac ./source/elevator/Engine.o
                               0x36d86 (size before relaxing)
- .debug_str     0x00039515       0xd3 ./source/elevator/Led.o
+ .debug_str     0x00039514       0xd3 ./source/elevator/Led.o
                               0x346af (size before relaxing)
- .debug_str     0x000395e8       0xd5 ./source/elevator/Switch.o
+ .debug_str     0x000395e7       0xd5 ./source/elevator/Switch.o
                               0x36e26 (size before relaxing)
- .debug_str     0x000396bd      0x1d1 ./source/elevator/Watchdog.o
+ .debug_str     0x000396bc      0x1d1 ./source/elevator/Watchdog.o
                               0x36cf9 (size before relaxing)
- .debug_str     0x0003988e      0x181 ./source/communication/CircularBuffer.o
+ .debug_str     0x0003988d      0x181 ./source/communication/CircularBuffer.o
                                0x7335 (size before relaxing)
- .debug_str     0x00039a0f      0x39a ./source/communication/CircularBufferUart.o
+ .debug_str     0x00039a0e      0x39a ./source/communication/CircularBufferUart.o
                               0x33e25 (size before relaxing)
- .debug_str     0x00039da9      0x24b ./source/communication/Comunicator.o
+ .debug_str     0x00039da8      0x24b ./source/communication/Comunicator.o
                               0x34d24 (size before relaxing)
- .debug_str     0x00039ff4      0x3a7 ./source/accelerometer/LIBRARYI2C.o
+ .debug_str     0x00039ff3      0x3a7 ./source/accelerometer/LIBRARYI2C.o
                               0x339ab (size before relaxing)
- .debug_str     0x0003a39b      0x15c ./source/accelerometer/MMA8451Q.o
+ .debug_str     0x0003a39a      0x15c ./source/accelerometer/MMA8451Q.o
                               0x35bca (size before relaxing)
- .debug_str     0x0003a4f7     0x1038 ./source/MKL25Z128xxx4_Project_ACC.o
-                              0x3802f (size before relaxing)
- .debug_str     0x0003b52f      0x58e ./source/mtb.o
-                               0x320d (size before relaxing)
- .debug_str     0x0003babd       0x1f ./source/semihost_hardfault.o
+ .debug_str     0x0003a4f6     0x1038 ./source/MKL25Z128xxx4_Project_ACC.o
+                              0x3802e (size before relaxing)
+ .debug_str     0x0003b52e      0x532 ./source/mtb.o
+                               0x321f (size before relaxing)
+ .debug_str     0x0003ba60       0x1f ./source/semihost_hardfault.o
                                0x2d0c (size before relaxing)
- .debug_str     0x0003badc     0x14ba ./drivers/fsl_clock.o
-                              0x34a09 (size before relaxing)
- .debug_str     0x0003cf96      0x142 ./drivers/fsl_common.o
+ .debug_str     0x0003ba7f     0x14ba ./drivers/fsl_clock.o
+                              0x34a1b (size before relaxing)
+ .debug_str     0x0003cf39      0x142 ./drivers/fsl_common.o
                               0x32ffb (size before relaxing)
- .debug_str     0x0003d0d8      0x775 ./drivers/fsl_dma.o
+ .debug_str     0x0003d07b      0x775 ./drivers/fsl_dma.o
                               0x33cde (size before relaxing)
- .debug_str     0x0003d84d      0x14f ./drivers/fsl_gpio.o
+ .debug_str     0x0003d7f0      0x14f ./drivers/fsl_gpio.o
                               0x3326b (size before relaxing)
- .debug_str     0x0003d99c      0x970 ./drivers/fsl_i2c.o
+ .debug_str     0x0003d93f      0x970 ./drivers/fsl_i2c.o
                               0x341f5 (size before relaxing)
- .debug_str     0x0003e30c      0x668 ./drivers/fsl_lpsci.o
+ .debug_str     0x0003e2af      0x668 ./drivers/fsl_lpsci.o
                               0x34023 (size before relaxing)
- .debug_str     0x0003e974       0x78 ./drivers/fsl_pit.o
-                              0x33382 (size before relaxing)
- .debug_str     0x0003e9ec      0x7b1 ./drivers/fsl_spi.o
-                              0x33dd3 (size before relaxing)
- .debug_str     0x0003f19d      0x832 ./drivers/fsl_uart.o
+ .debug_str     0x0003e917       0x78 ./drivers/fsl_pit.o
+                              0x33394 (size before relaxing)
+ .debug_str     0x0003e98f      0x7b1 ./drivers/fsl_spi.o
+                              0x33de5 (size before relaxing)
+ .debug_str     0x0003f140      0x832 ./drivers/fsl_uart.o
                               0x34046 (size before relaxing)
- .debug_str     0x0003f9cf       0x4c ./board/board.o
+ .debug_str     0x0003f972       0x4c ./board/board.o
                               0x33b59 (size before relaxing)
- .debug_str     0x0003fa1b      0x300 ./board/clock_config.o
+ .debug_str     0x0003f9be      0x300 ./board/clock_config.o
                               0x3392b (size before relaxing)
- .debug_str     0x0003fd1b       0x31 ./board/peripherals.o
-                               0x2d0b (size before relaxing)
- .debug_str     0x0003fd4c      0x455 ./board/pin_mux.o
-                              0x33708 (size before relaxing)
- .debug_str     0x000401a1       0x4f ./CMSIS/system_MKL25Z4.o
+ .debug_str     0x0003fcbe       0x31 ./board/peripherals.o
+                               0x2d1d (size before relaxing)
+ .debug_str     0x0003fcef      0x455 ./board/pin_mux.o
+                              0x3371a (size before relaxing)
+ .debug_str     0x00040144       0x4f ./CMSIS/system_MKL25Z4.o
                               0x2f397 (size before relaxing)
- .debug_str     0x000401f0      0x196 c:/myapps/mcuxpressoide_10.2.1_795/ide/tools/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m\libcr_newlib_nohost.a(_cr_sbrk.o)
+ .debug_str     0x00040193      0x196 c:/myapps/mcuxpressoide_10.2.1_795/ide/tools/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m\libcr_newlib_nohost.a(_cr_sbrk.o)
                                 0x60e (size before relaxing)
- .debug_str     0x00040386       0x15 c:/myapps/mcuxpressoide_10.2.1_795/ide/tools/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m\libcr_newlib_nohost.a(_exit.o)
+ .debug_str     0x00040329       0x15 c:/myapps/mcuxpressoide_10.2.1_795/ide/tools/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m\libcr_newlib_nohost.a(_exit.o)
                                 0x1ae (size before relaxing)
- .debug_str     0x0004039b       0x18 c:/myapps/mcuxpressoide_10.2.1_795/ide/tools/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m\libcr_newlib_nohost.a(getpid.o)
+ .debug_str     0x0004033e       0x18 c:/myapps/mcuxpressoide_10.2.1_795/ide/tools/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m\libcr_newlib_nohost.a(getpid.o)
                                 0x5af (size before relaxing)
- .debug_str     0x000403b3       0x14 c:/myapps/mcuxpressoide_10.2.1_795/ide/tools/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m\libcr_newlib_nohost.a(kill.o)
+ .debug_str     0x00040356       0x14 c:/myapps/mcuxpressoide_10.2.1_795/ide/tools/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m\libcr_newlib_nohost.a(kill.o)
                                 0x5ab (size before relaxing)
- .debug_str     0x000403c7       0x25 c:/myapps/mcuxpressoide_10.2.1_795/ide/tools/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m\libcr_newlib_nohost.a(_cr_check_heap.o)
+ .debug_str     0x0004036a       0x25 c:/myapps/mcuxpressoide_10.2.1_795/ide/tools/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m\libcr_newlib_nohost.a(_cr_check_heap.o)
                                 0x166 (size before relaxing)
 
 .comment        0x00000000       0x7e

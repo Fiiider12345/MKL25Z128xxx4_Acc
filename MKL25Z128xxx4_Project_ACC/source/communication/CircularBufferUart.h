@@ -17,6 +17,7 @@
 
 #define _bufferUartSize 150
 #define BAUDRATE 57600
+//#define BAUDRATE 230400
 extern buffer_t cBuffer;
 
 /**

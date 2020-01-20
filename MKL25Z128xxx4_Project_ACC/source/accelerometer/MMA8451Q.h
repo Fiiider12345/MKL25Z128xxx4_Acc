@@ -40,7 +40,7 @@
 class MMA8451Q {
 public:
 	/**
-	 * MMA8451Q constructor
+	 * MMA8451Q constructor - activate the i2c peripheral, acc, freefall init
 	 * @param sda SDA pin
 	 * @param sdl SCL pin
 	 * @param addr addr of the I2C peripheral
